@@ -20,13 +20,18 @@ func fun2(a int, b int) (total int) {
 }
 
 // 리턴값 여러개 반환
+// total, name := fun3("name")
+// >> 4, NAME
 func fun3(name string) (int, string) {
 	return len(name), strings.ToUpper(name)
 }
 
 // arguments 여러가지
+// fun4("name1", "name2", "name3")
+// >> [name1 name2 name3]
 func fun4(names ...string) {
 	fmt.Println(names)
+
 }
 
 func main() {
